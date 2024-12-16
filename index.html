@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galiz Agency</title>
+    <meta name="description" content="Automatizamos tus procesos con chatbots, inteligencia artificial y consultoría para maximizar tu eficiencia.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Galiz Agency</a>
+            <nav class="nav">
+                <a href="#servicios">Servicios</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+        <div class="container">
+            <h2>Potenciamos la eficiencia de tu negocio utilizando IA</h2>
+            <p>Consultoría, agentes de IA y automatizaciones para maximizar tus ganancias.</p>
+            <a href="#contacto" class="cta">Comienza ahora</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services" data-aos="fade-right">
+        <div class="container">
+            <h2>Nuestros servicios</h2>
+            <div class="service-list">
+                <div class="service-item" data-aos="zoom-in">
+                    <h3>Transforma tu empresa con estrategias impulsadas por IA.</h3>
+                </div>
+                <div class="service-item" data-aos="zoom-in">
+                    <h3>Automatiza la atención al cliente para mejorar la experiencia.</h3>
+                </div>
+                <div class="service-item" data-aos="zoom-in">
+                    <h3>Optimiza tus procesos y ahorra tiempo.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id= "testimonios" class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item" data-aos="fade-right">
+                <p>"Gracias a Galiz Agency, nuestra eficiencia se duplicó. ¡Altamente recomendados!"</p>
+                <h4>Yajuana</h4>
+            </div>
+            <div class="testimonial-item" data-aos="fade-left">
+                <p>"Los chatbots que nos proporcionaron han transformado nuestra atención al cliente."</p>
+                <h4>Aurora Rodados</h4>
+            </div>
+            <div class="testimonial-item" data-aos="fade-up">
+                <p>"Automatizamos nuestros procesos con su ayuda y los resultados son increíbles."</p>
+                <h4>Hotel Mingo</h4>
+            </div>
+        </div>
+    </section>    
+
+    <section id="sobre-nosotros" class="about" data-aos="fade-left">
+        <div class="container">
+            <h2>Sobre nosotros</h2>
+            <p>Somos una agencia dedicada a ofrecer soluciones de inteligencia artificial para empresas de todos los tamaños. Nuestro objetivo es simplificar tus procesos y aumentar tu productividad.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>¿Estás listo para llevar tu negocio al siguiente nivel? Completa el formulario y te contactaremos pronto.</p>
+            <form action="https://formspree.io/f/xzzbjeed" method="POST" target="_blank">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Escribe tu correo">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="cta">Enviar</button>
+            </form>            
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/galizagency" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>© 2024 Galiz Agency. Todos los derechos reservados.</p>
+        </div>
+    </footer>    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1000, // Duración de las animaciones en milisegundos
+          once: true, // Solo anima una vez
+        });
+      </script>
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevenir el comportamiento por defecto
+    
+                const targetElement = document.querySelector(this.getAttribute('href'));
+    
+                if (targetElement) {
+                    const offset = 70; // Altura del header fijo, ajusta según sea necesario
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - offset;
+    
+                    // Realizar scroll suave
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>    
+</body>
+</html>
